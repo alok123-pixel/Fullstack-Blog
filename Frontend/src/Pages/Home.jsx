@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Header from '../Components/Header'
 import BlogList from '../Components/BlogList'
-import Newsletter from '../Components/NewsLetter'
+import NewsLetter from '../Components/NewsLetter'
 import Footer from '../Components/Footer'
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
     <Navbar/>
     <Header/>
     <BlogList/>
-    <Newsletter/>
+    <NewsLetter/>
     <Footer/>
     </>
   )
