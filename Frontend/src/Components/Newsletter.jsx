@@ -1,4 +1,4 @@
-
+import react from 'react'
 const NewsLetter = () => {
   return (
     <div className='flex flex-col items-center justify-center text-center space-y-2 my-32'>
