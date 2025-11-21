@@ -48,7 +48,6 @@ const Login = () => {
               className="w-full py-3 font-medium bg-primary text-white rounded cursor-pointer hover:bg-primary/90 transition-all ">
               Login
              </button >
-
             </form> 
       </div>
    </div> 

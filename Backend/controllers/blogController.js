@@ -52,11 +52,13 @@ export const addBlog = async (req,res)=>{
   
 export const getAllBlogs = async(req,res)=>{
     try {
+        console.log('[getAllBlogs] incoming request from', req.ip || req.headers['x-forwarded-for'] || req.connection.remoteAddress)
         const blogs = await Blog.find({isPublished: true})
+        console.log('[getAllBlogs] found', blogs.length, 'blogs')
         res.json({success:true, blogs})
     } catch (error) {
-        
-        res.json({success:true, message: error.message})
+        console.error('[getAllBlogs] error', error.message)
+        res.json({success:false, message: error.message})
     } 
 
 }

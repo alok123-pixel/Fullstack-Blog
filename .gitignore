@@ -6,3 +6,5 @@ ADMIN_PASSWORD = "admin"
 
 JWT_SECRET = OYUCkcyqgZAaM0ogRHVIg9GG_Gzh9zMocyO3UtNdDNToJ0X0-5n3DmVkx08MCFRSLD9CV1kBfLwK7fdO
 node_modules
+.env
+.env

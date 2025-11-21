@@ -12,6 +12,12 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
+// Simple request logger to help debug incoming requests and 404s
+app.use((req, res, next) => {
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+    next();
+});
+
 await connectDB()
 
 const PORT = process.env.PORT || 3000;
